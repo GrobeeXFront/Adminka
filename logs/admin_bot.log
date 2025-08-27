@@ -1,0 +1,55 @@
+2025-08-27 14:36:07,010 - utils.logging - INFO - Блокировка успешно получена
+2025-08-27 14:36:07,156 - utils.logging - INFO - Запуск SSH админ-бота...
+2025-08-27 14:36:07,228 - telegram.ext.Application - INFO - Application started
+2025-08-27 14:36:07,251 - utils.logging - INFO - Админ-бот успешно запущен и готов к работе
+2025-08-27 14:36:59,529 - utils.logging - INFO - Завершение работы админ-бота...
+2025-08-27 14:36:59,616 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-08-27 14:36:59,616 - telegram.ext.Application - CRITICAL - Fetching updates was aborted due to CancelledError(). Suppressing exception to ensure graceful shutdown.
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1871, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/usr/lib/python3.10/selectors.py", line 469, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telegram/ext/_application.py", line 1228, in _update_fetcher
+    await self.__update_fetcher()
+  File "/usr/local/lib/python3.10/dist-packages/telegram/ext/_application.py", line 1207, in __update_fetcher
+    update = await self.update_queue.get()
+  File "/usr/lib/python3.10/asyncio/queues.py", line 159, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/telegram/ext/_application.py", line 673, in stop
+    self.__update_fetcher_task.result()
+asyncio.exceptions.CancelledError
+2025-08-27 14:36:59,620 - telegram.ext.Application - INFO - Application.stop() complete
+2025-08-27 14:36:59,622 - utils.logging - INFO - Блокировка освобождена
+2025-08-27 14:36:59,623 - utils.logging - INFO - Остановлено по Ctrl+C
+2025-08-27 14:36:59,624 - utils.logging - INFO - Работа админ-бота завершена
+2025-08-27 14:37:01,649 - utils.logging - INFO - Блокировка успешно получена
+2025-08-27 14:37:01,899 - utils.logging - INFO - Запуск SSH админ-бота...
+2025-08-27 14:37:01,986 - telegram.ext.Application - INFO - Application started
+2025-08-27 14:37:02,007 - utils.logging - INFO - Админ-бот успешно запущен и готов к работе
+2025-08-27 14:37:14,374 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2025-08-27 14:37:14,440 - paramiko.transport - INFO - Authentication (password) successful!
+2025-08-27 14:37:25,780 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2025-08-27 14:37:25,866 - paramiko.transport - INFO - Authentication (password) successful!
+2025-08-27 14:37:26,016 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2025-08-27 14:37:26,080 - paramiko.transport - INFO - Authentication (password) successful!
+2025-08-27 14:37:26,164 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2025-08-27 14:37:26,228 - paramiko.transport - INFO - Authentication (password) successful!
+2025-08-27 14:37:28,313 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2025-08-27 14:37:28,376 - paramiko.transport - INFO - Authentication (password) successful!
